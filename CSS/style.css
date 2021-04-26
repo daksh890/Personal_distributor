@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+*{
+	margin: 0; padding : 0;
+	box-sizing: border-box;
+}
+header{
+	width: 100%;
+	height: 100vh;
+	background-color: white;
+	/*background-image: url("../Images/mnhdr-bg.png");*/
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.mainheader{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+.mainheader .logo h3{
+	font-family: 'EB Garamond', serif;
+	font-size: 40px;
+	padding-left: 40px;
+}
+
+.mainheader .logo .desc{
+	font-family:'EB Garamond', serif;
+	font-size: 12px;
+	position:relative; left:5px; top:0px
+}
+.mainheader .btn{
+	padding-left: 220px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+.mainheader .btn .loginbtn{
+	margin: 20px;
+	margin-right: 90px;
+
+}
+
+.mainheader .btn .loginbtn button{
+	padding: 10px 45px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	border: none;
+	background-color: #000000;
+	border-radius: 10px;
+
+}
+/*Logo Image*/
+.lgo-image{
+	margin-top: -20px;
+	margin-left: 310px;
+	padding: 30px;
+	padding-bottom: 0px;
+	display: flex;
+	align-items: center;
+}
+
+.lgo-image img{
+	background-color: transparent;
+	width:150px;
+	height: 150px;
+}
+
+
+/*End Logo Image*/
+
+
+/*Main Section */
+main {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+
+main .left-sec{
+	float: left;
+	padding: 40px;
+	width: 60%;
+	padding-left: 80px;
+}
+
+
+/*Dynamic Content Animation*/
+.hidden {
+  opacity:0;
+}
+.console-container {
+  font-family: 'Montserrat', sans-serif;
+  font-size:4em;
+  font-weight: lighter;
+  text-align:left;
+  height:10vh;
+  width:102%;
+  display:block;
+  /*position:fixed;*/
+  color:yellow;
+  background-color:transparent;
+  margin-bottom: 30px;
+}
+.console-underscore {
+  display:none;
+  /*position:relative;
+  top:-0.14em;
+  left:10px;
+  color: black; #3B3838;*/
+}
+/*End Dynamic Content Animation*/
+
+.left-sec h2{
+	font-size: 30px;
+	letter-spacing: 10px;
+	font-family: Calibri;
+	text-transform: capitalize;
+	font-weight: lighter;
+	color: #3d7ba6;
+	margin-top: 0px;
+	/*margin-left: 12px;*/
+	padding-bottom: 40px;
+	padding-left: 150px;
+	/*background-color: yellow;*/
+}
+/*.left-sec h1{
+	
+}*/
+.left-sec p{
+	text-transform: capitalize;
+	font-size: 20px;
+	margin-bottom: 15px;
+	margin-top: -10px;
+	/*margin-left: 12px;*/ 
+	/*font-weight: ;*/
+}
+.dropdownbar{
+	/*margin-left: 12px;*/
+	margin-top: -14px;
+	display: flex;
+	align-items: center;
+}
+
+/* Dropdown Button*/
+main .left-sec .btn {
+	background-color:#2e7837;
+	padding: 12px 22px;
+	width: 200px;
+}
+main .left-sec .btn{
+	font-size: 24px;
+	font-weight: 600;
+	font-family: 'EB Garamond', serif;
+	border-radius: 0px;
+	border: 2px solid white;
+	color: white;
+}
+main .left-sec .btn:hover{
+	color: #b113eb;
+	border-color: #b113eb;
+	background-color: transparent;
+}
+main .left-sec .btn:active .btn:focus{
+	border-color: #6858F2;
+	color: #6858F2;
+	box-shadow: none;
+	background-color: transparent;
+}
+main .left-sec .dropdown.open >.btn:active{
+	background-color: transparent;
+	color:black;
+}
+main .left-sec .dropdown.open >.btn:focus{
+	background-color: transparent;
+	color:black;
+} 
+main .left-sec .dropdown-signup .btn{
+	background-color:blue;
+	color: white;
+	font-size: 24px;
+}
+main .left-sec .dropdown-signup.open >.btn:focus{
+	background-color: transparent;
+	color: red;
+}
+/*End DropDown Button*/
+
+/*DropDown Menu*/
+main .left-sec .dropdown-menu{
+	font-size: 20px;
+	font-family: Calibri;
+	font-style: bold;
+	color: white;
+	background-color:black;
+	align-items: center;
+	width: 200px;
+}
+
+main .left-sec .dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #ffffff;
+    white-space: nowrap;
+}
+main .left-sec .dropdown-menu>li>a:hover {
+	color: black;
+
+}
+/*End Dropdown Menu*/
+
+/*Slider Images*/
+main .right-sec{
+	width: 40%;
+    float: left;
+    margin-top:-10px;
+    padding-left: 50px;
+    background-color: transparent;
+}
+.slider {
+    width: 500px;
+    height: 350px;
+    background: transparent;
+	/*background-image: url(image/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+
+    /*animation: slide 34s infinite;
+    transition: 800ms;*/
+
+    /*box-shadow: 0 0px 50px rgba(0, 0, 0, 1), inset 0 0px 400px rgba(0, 0, 0, .6);*/
+    /*border-radius: 5px;*/
+}
+#dog{
+	opacity: 0;
+	animation: slide 8.950s -0.01s infinite;
+	width: 500px;
+    height: 350px;
+}
+
+@keyframes slide {
+    20% {
+        opacity:1;
+    }
+    80%{
+    	opacity: 1;
+    }
+    100%{
+    	opacity: 0.01;
+    }
+}

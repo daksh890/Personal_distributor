@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&display=swap');
+
+
+*{
+	margin:0;
+	padding:0;
+}
+header{
+	width: 100%;
+	height: 14vh;
+	/*background-color: yellow;*/
+	/*border:2px solid black;*/
+	
+}
+
+.mainheader{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+.mainheader .logo h3{
+	font-family: 'EB Garamond', serif;
+	font-size: 40px;
+	padding-left: 40px;
+}
+
+.mainheader .logo .desc{
+	font-family:'EB Garamond', serif;
+	font-size: 12px;
+	position:relative; left:5px; top:0px
+}
+.mainheader .btn{
+	padding-left: 220px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+.mainheader .btn .loginbtn{
+	margin: 20px;
+	margin-right: 90px;
+
+}
+
+.mainheader .btn .loginbtn button{
+	padding: 10px 45px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	border: none;
+	background-color: #000000;
+	border-radius: 10px;
+
+}
+/*Menu styling*/
+.menu-wrap{
+
+	display: flex;
+	position: fixed;
+	top: 15px;
+	margin-left: 180px;
+	z-index: 2;
+}
+
+.toggler{
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	width: 60px;
+	height: 60px;
+	z-index: 3;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.hamburger{
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	width: 60px;
+	height: 60px;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	
+}
+
+.hamburger>div{
+	position: absolute;
+	width: 60%;
+	height: 3px;
+	border-radius: 1.5px;
+	background-color: #ff5e00;
+	transition: .4s;
+}
+
+.hamburger>div:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	border-radius: 1.5px;
+	background-color: #ff5e00;
+	top: -10px;
+	left: 0;
+	transition: .4s;
+}
+
+.hamburger>div:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	border-radius: 1.5px;
+	background-color: #ff5e00;
+	top: 10px;
+	left: 0;
+	transition: .4s;
+}
+
+.toggler:checked + .hamburger>div{
+	transform: rotate(135deg);
+}
+
+.toggler:checked:hover + .hamburger>div{
+	transform: rotate(225deg);
+}
+
+.toggler:checked + .hamburger>div:before, .toggler:checked + .hamburger>div:after{
+	top: 0;
+	transform: rotate(90deg);
+}
+
+.menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	transition: .6s;
+}
+
+.menu > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-250%) translateY(-60%);
+    width: 1800px;
+    height: 1800px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .6s;
+}
+
+.menu > div > div{
+	max-width: 90vw;
+	max-height: 120vh;
+	opacity: 0;
+	transition: .6s;
+	align-items: center;
+}
+
+.menu > div > div > ul > li{
+	list-style: none;
+}
+
+.menu > div > div > ul > li > a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 550;
+	text-transform: uppercase;
+	margin: .5rem;
+	transition: .3s;
+	font-size: 2.2rem;
+	display: inline-block;
+}
+
+.menu > div > div > ul > li > a:hover{
+	color: #fff44f;
+}
+
+.toggler:checked ~ .menu{
+	visibility: visible;
+}
+
+.toggler:checked ~ .menu > div{
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.toggler:checked ~ .menu > div > div{
+	opacity: 1;
+}
+/*End Menu Styling*/
+/*Main Section*/
+.main{
+	/*align-items:center;*/
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+/*Heading Section*/
+
+.heading{
+	width: calc(screen-width - 120px);
+	height: 84vh;
+	/*background-color: pink;*/
+	margin: 0 60px 0 60px;
+	padding:0 40px 0 40px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: left;
+}
+
+.heading h1{
+	position:relative;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 700;
+	font-size: 3.5rem;
+	padding:20px auto;
+	top:130px;
+	left:-260px;
+}
+.heading h2{
+	position:relative;
+	font-family: 'Dosis', sans-serif;
+	font-weight:400;
+	font-size:1.8rem;
+	top:140px;
+	left:-270px;
+}
+.heading img{
+	position:relative;
+	top:-100px;
+	left:380px;
+}
+/*End Heading Section*/
+
+/*trust Section*/
+.trust{
+	/*background-color: green;*/
+	height:80vh;
+	display:flex;
+	margin: 0 60px 0 60px;
+	padding: 20px 20px 20px 20px;
+	flex-direction: column;
+	align-items: center;
+	text-align:center;
+}
+.trust div{
+	/*background-color:yellow;*/
+	margin: 0 0 20px 0;
+}
+.trust div h2{
+	font-family: 'Dosis', sans-serif;
+	font-weight:500;
+	font-size:3rem;
+}
+.trust div h3{
+	margin-top:40px;
+	font-size:1.5rem;
+	font-family: 'Dosis', sans-serif;
+	font-weight:300;
+}
+.comments{
+	/*background-color: green;*/
+	height:60vh;
+	width: calc(screen-width - 120px);
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 0 60px 0 60px;
+	padding:40px auto;
+	/*position:absolute;*/
+}
+.comments div{
+	/*background-color: yellow;*/
+	width:25%;
+	height:90%;
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	text-align: center;
+	margin:20px 20px 20px 20px;
+}
+.comments div img{
+	height:100px;
+	width:100px;
+	margin:20px 0 20px 0;
+}
+.comments div h3{
+	margin:20px 0 20px 0;
+	font-size:1.3rem;
+}
+.comments div h2{
+	margin:20px 0 20px 0;
+	font-size:1.3rem;
+	font-weight:800;
+}
+/*Lower Section*/
+.lower{
+	background-color:whitesmoke;
+	height:120vh;
+	margin: 0 60px 0 60px;
+	padding:0 40px 0 40px;
+	font-family: 'Dosis', sans-serif;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/*text-align: left;*/
+}
+.lower_1{
+	width:95%;
+	height:44%;
+	/*background-color:yellow;*/
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+}
+.lower_1 div{
+	width:25%;
+	height:82%;
+	background-color: white;
+	/*border:7px solid cyan;*/
+	/*border-radius: 20px ;*/
+	padding:15px;
+	display:flex;
+	justify-content: space-around;
+	flex-direction:column;
+	align-items:left;
+	/*text-align: center;*/
+	/*float:left;*/
+}
+.star {
+  background: gold;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+.lower_1 div h3{
+	font-size:1.3rem;
+	font-weight:300;
+	line-height: 1.4;
+}
