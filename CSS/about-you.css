@@ -382,6 +382,31 @@ body{
     overflow: hidden;
     position: relative;
 }
+#third .mrkt-img{
+	background: rgb(30,100,255);
+    flex-basis: 30%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#third .mrkt-img::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    /*background: rgb(82,215,255);*/
+    /*background: linear-gradient(202deg, rgba(82,215,255,1) 26%, rgba(27,184,151,1) 100%, rgba(67,111,189,1) 100%);*/
+    opacity: 0.2;
+}
+#third .mrkt-img img{
+    margin-top: 60px;
+    height: 350px;
+    width: 350px;
+    transition: .8s step-end transform;
+    background-color: white;
+}
 #third .story-img::after{
     content: '';
     position: absolute;

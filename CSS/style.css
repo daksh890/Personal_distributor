@@ -267,3 +267,13 @@ main .right-sec{
     	opacity: 0.01;
     }
 }
+/*Footer Section*/
+.f-container{
+	height: 10vh;
+}
+.f-containerx {
+	position:relative;
+	top: 100px;
+	align-items: center;
+	text-align: center;
+}
