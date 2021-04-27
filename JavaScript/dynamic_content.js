@@ -54,7 +54,7 @@ function consoleText(words, id, colors) {
 
     window.onload = () => {
       const dog = document.getElementById("dog");
-      const dogImgPaths = ["./Images/actual/1.jpg","./Images/actual/2.jpg", "./Images/actual/3.jpg", "./Images/actual/4.jpg","./Images/actual/5.png", "./Images/actual/6.png"];
+      const dogImgPaths = ["./Images/actual/india.png","./Images/actual/2.jpg", "./Images/actual/3.jpg", "./Images/actual/4.jpg","./Images/actual/5.png", "./Images/actual/6.png"];
       let index = 0;
       setInterval(() => {
         index = (index + 1) % dogImgPaths.length;

@@ -193,6 +193,12 @@ main .left-sec .dropdown-signup.open >.btn:focus{
 	background-color: transparent;
 	color: red;
 }
+.dropdownbar .dropdown:nth-child(1) .btn{
+	border-radius: 50px 0 0 50px;
+}
+.dropdownbar .dropdown-signup .btn{
+	border-radius: 0 50px 50px 0;
+}
 /*End DropDown Button*/
 
 /*DropDown Menu*/
@@ -260,4 +266,14 @@ main .right-sec{
     100%{
     	opacity: 0.01;
     }
+}
+/*Footer Section*/
+.f-container{
+	height: 10vh;
+}
+.f-containerx {
+	position:relative;
+	top: 100px;
+	align-items: center;
+	text-align: center;
 }
